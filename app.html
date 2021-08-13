@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <script src="game.js"></script>
+
+    <link rel="stylesheet" href="style.css" />
+
+    <title>App Mata Mosquito</title>
+  </head>
+  <body>
+    <div class="painel">
+      <div class="vidas">
+        <img id="v1" src="imagens/coracao_cheio.png" />
+        <img id="v2" src="imagens/coracao_cheio.png" />
+        <img id="v3" src="imagens/coracao_cheio.png" />
+        <img id="v4" src="imagens/coracao_cheio.png" />
+        <img id="v5" src="imagens/coracao_cheio.png" />
+      </div>
+
+      <div class="cronometro">
+        Tempo restante: <span id="cronometer"></span>
+      </div>
+    </div>
+
+    <script>
+      document.getElementById('cronometer').innerHTML = time
+
+      let criaMosquito = setInterval(() => {
+        posicaoRandomica() // Foi feito a implementação da função aqui também para criar a randomização junto com as tags HTML(hierarquia)
+      }, criaMosquitoTempo) // puxa a variável do GameJS para criar mosquitos dinâmicamente
+    </script>
+  </body>
+</html>

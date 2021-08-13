@@ -1,0 +1,96 @@
+html {
+  cursor: url(imagens/mata_mosquito.png) 30 30, auto;
+  overflow: hidden;
+}
+
+
+body {
+  background-image: url(imagens/bg.jpg);
+  background-repeat:no-repeat;
+  background-size: 100%;
+}
+
+.mosquito1 {
+  width: 50px;
+  height: 50px;
+
+}
+
+.mosquito2 {
+  width: 70px;
+  height: 70px;
+
+}
+
+.mosquito3 {
+  width: 90px;
+  height: 90px;
+
+}
+
+
+.ladoA {
+  transform: scaleX(1); /* Lado horizontal, X .  Lado original da imagem*/ 
+}
+
+
+.ladoB {
+  transform: scaleX(-1) /* o -1 faz o inverso, um flip horizontal*/ 
+}
+
+.painel {
+  position: absolute;
+  width: 190px;
+  padding: 10px;
+  left: 0px;
+  bottom: 0px;
+  border-top: solid 1px #fff;
+  background-color: #fff;
+  opacity: 0.7;
+}
+
+
+.vidas {
+  float: left;
+}
+
+.cronometro {
+  float: left;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  text-align: center;
+  color: white;
+  width: 100%;
+  padding-top: 10px;
+  font-family:'Times New Roman', Times, serif;
+  font-size: 20px;
+  font-weight:bold;
+  background-color: rgba(17, 94, 61, 0.425);
+  
+  
+
+}
+
+.btn-primary-spacing{
+  margin-right: 30px;
+  margin-left: 25px;
+  margin-bottom: 5px !important ;
+}
+
+#ajuste {
+  color: rgba(255, 255, 255, 0.993);
+  text-align: center;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  background:rgba(0, 0, 0, 0.281);
+  font-weight:bold;
+  width: auto;
+
+}
+
+
+
